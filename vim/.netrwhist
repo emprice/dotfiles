@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/mnt/shatterdome/dev/seniorthesis/tidal3d'
+let g:netrw_dirhist_2='/mnt/shatterdome/dev/seniorthesis/tidal3d/squishviz'
+let g:netrw_dirhist_3='/mnt/shatterdome/dev/python/exo/emceeX'
+let g:netrw_dirhist_4='/home/ellen/src/radmc-3d/version_0.39/examples/run_simple_1_userdefsrc'
+let g:netrw_dirhist_5='/media/ellen/mybackup/ellen/foremost/png'
+let g:netrw_dirhist_6='/media/ellen/1DE98E0004412A2B/dev/latex/empvitae'
+let g:netrw_dirhist_7='/home/ellen/.conky'
+let g:netrw_dirhist_8='/mnt/matador/home/Documents/problemsets/ay215/oberg/mplstyle'
