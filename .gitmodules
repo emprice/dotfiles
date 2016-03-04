@@ -7,3 +7,6 @@
 [submodule "vim/bundle/wombat256.vim"]
 	path = vim/bundle/wombat256.vim
 	url = https://github.com/vim-scripts/wombat256.vim.git
+[submodule "vim/bundle/vim-airline-themes"]
+	path = vim/bundle/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
