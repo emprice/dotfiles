@@ -32,6 +32,12 @@ set cursorline
 noremap j gj
 noremap k gk
 
+" Alternative escape sequence.
+imap jk <Esc>
+
+" Word count for LaTeX documents
+map ww :w !detex \| wc -w<CR>
+
 " Disables tab expansion for Makefiles, since they require tab characters.
 autocmd FileType make setlocal noexpandtab
 
