@@ -10,3 +10,27 @@
 [submodule "vim/bundle/vim-airline-themes"]
 	path = vim/bundle/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
+[submodule "fonts"]
+	path = fonts
+	url = https://github.com/powerline/fonts
+[submodule "vim/bundle/gruvbox"]
+	path = vim/bundle/gruvbox
+	url = https://github.com/morhetz/gruvbox.git
+[submodule "vim/bundle/vim-pink-moon"]
+	path = vim/bundle/vim-pink-moon
+	url = https://github.com/sts10/vim-pink-moon.git
+[submodule "vim/bundle/Zenburn"]
+	path = vim/bundle/Zenburn
+	url = https://github.com/jnurmine/Zenburn.git
+[submodule "vim/bundle/awesome-vim-colorschemes"]
+	path = vim/bundle/awesome-vim-colorschemes
+	url = https://github.com/rafi/awesome-vim-colorschemes.git
+[submodule "vim/bundle/vim-aldmeris"]
+	path = vim/bundle/vim-aldmeris
+	url = https://github.com/veloce/vim-aldmeris.git
+[submodule "vim/bundle/vim-atomic"]
+	path = vim/bundle/vim-atomic
+	url = https://github.com/gerardbm/vim-atomic.git
+[submodule "vim/bundle/vim-css-color"]
+	path = vim/bundle/vim-css-color
+	url = https://github.com/ap/vim-css-color.git

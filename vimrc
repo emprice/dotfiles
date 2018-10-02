@@ -27,6 +27,9 @@ set number
 " Highlights the current line.
 set cursorline
 
+" Turn on modeline
+set modeline
+
 " Maps j and k to move between wrapped lines (instead of between lines
 " separated by newline characters).
 noremap j gj
@@ -35,8 +38,19 @@ noremap k gk
 " Alternative escape sequence.
 imap jk <Esc>
 
+" Fast tab switching
+noremap gh gT
+noremap gl gt
+
+" Change/delete inner words
+noremap cw ciw
+noremap dw diw
+
 " Word count for LaTeX documents
 map ww :w !detex \| wc -w<CR>
+
+" Write and make in a single command
+map mm :w<CR>:!make<CR>
 
 " Disables tab expansion for Makefiles, since they require tab characters.
 autocmd FileType make setlocal noexpandtab
@@ -99,10 +113,20 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
 syntax enable
-set term=screen-256color
-set t_Co=256
 set background=dark
-colorscheme wombat256mod
+set termguicolors
+"colorscheme wombat256mod
+"let g:gruvbox_italic=1
+"let g:gruvbox_contrast_dark='soft'
+"colorscheme gruvbox
+"colorscheme yellow-moon
+"let g:airline_theme='atomic'
+"colorscheme zenburn
+"let g:atomic_italic=1
+"colorscheme atomic
+"AtomicDarkBlueSoft
+colorscheme hybrid
+let g:airline_theme='atomic'
 
 " Highlight TODO, FIXME, NOTE, etc.
 autocmd Syntax * call matchadd('Todo', '\W\zs\(TODO\|FIXME\|NOTE\|XXX\|BUG\|HACK\)')
