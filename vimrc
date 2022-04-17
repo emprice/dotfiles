@@ -115,18 +115,23 @@ let g:airline#extensions#tabline#enabled = 1
 syntax enable
 set background=dark
 set termguicolors
+let g:nord_italic = 1
+let g:nord_underline = 1
+let g:nord_italic_comments = 1
+let g:nord_cursor_line_number_background = 1
+colorscheme nord
 "colorscheme wombat256mod
 "let g:gruvbox_italic=1
 "let g:gruvbox_contrast_dark='soft'
-"colorscheme gruvbox
+"kcolorscheme gruvbox
 "colorscheme yellow-moon
 "let g:airline_theme='atomic'
-"colorscheme zenburn
+" colorscheme zenburn
 "let g:atomic_italic=1
 "colorscheme atomic
 "AtomicDarkBlueSoft
-colorscheme hybrid
-let g:airline_theme='atomic'
+"colorscheme hybrid
+let g:airline_theme='nord'
 
 " Highlight TODO, FIXME, NOTE, etc.
 autocmd Syntax * call matchadd('Todo', '\W\zs\(TODO\|FIXME\|NOTE\|XXX\|BUG\|HACK\)')
