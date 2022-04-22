@@ -114,7 +114,19 @@ let g:airline#extensions#tabline#enabled = 1
 
 syntax enable
 set background=dark
-set termguicolors
+
+if $STY != ""
+  " disable Background Color Erase (BCE) so that color schemes
+  " render properly when inside 256-color GNU screen.
+  set t_ut=
+  set t_Co=256
+  colorscheme hybrid
+  let g:airline_theme='atomic'
+else
+  set termguicolors
+  colorscheme nord
+endif
+
 "colorscheme wombat256mod
 "let g:gruvbox_italic=1
 "let g:gruvbox_contrast_dark='soft'
@@ -125,8 +137,10 @@ set termguicolors
 "let g:atomic_italic=1
 "colorscheme atomic
 "AtomicDarkBlueSoft
-colorscheme hybrid
-let g:airline_theme='atomic'
+"colorscheme hybrid
+"let g:airline_theme='atomic'
 
 " Highlight TODO, FIXME, NOTE, etc.
 autocmd Syntax * call matchadd('Todo', '\W\zs\(TODO\|FIXME\|NOTE\|XXX\|BUG\|HACK\)')
+
+" vim: set ft=vim:
