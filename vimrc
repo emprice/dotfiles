@@ -116,29 +116,21 @@ syntax enable
 set background=dark
 
 if $STY != ""
-  " disable Background Color Erase (BCE) so that color schemes
-  " render properly when inside 256-color GNU screen.
-  set t_ut=
-  set t_Co=256
-  colorscheme hybrid
-  let g:airline_theme='atomic'
+    " disable Background Color Erase (BCE) so that color schemes
+    " render properly when inside 256-color GNU screen.
+    set t_ut=
+    set t_Co=256
+    colorscheme hybrid
+    let g:airline_theme='atomic'
 else
-  set termguicolors
-  colorscheme nord
+    set termguicolors
+    colorscheme nord
+    let g:nord_italic = 1
+    let g:nord_underline = 1
+    let g:nord_italic_comments = 1
+    let g:nord_cursor_line_number_background = 1
+    let g:airline_theme='nord'
 endif
-
-"colorscheme wombat256mod
-"let g:gruvbox_italic=1
-"let g:gruvbox_contrast_dark='soft'
-"colorscheme gruvbox
-"colorscheme yellow-moon
-"let g:airline_theme='atomic'
-"colorscheme zenburn
-"let g:atomic_italic=1
-"colorscheme atomic
-"AtomicDarkBlueSoft
-"colorscheme hybrid
-"let g:airline_theme='atomic'
 
 " Highlight TODO, FIXME, NOTE, etc.
 autocmd Syntax * call matchadd('Todo', '\W\zs\(TODO\|FIXME\|NOTE\|XXX\|BUG\|HACK\)')
