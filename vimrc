@@ -120,16 +120,16 @@ if $STY != ""
     " render properly when inside 256-color GNU screen.
     set t_ut=
     set t_Co=256
-    colorscheme hybrid
     let g:airline_theme='atomic'
+    colorscheme hybrid
 else
     set termguicolors
-    colorscheme nord
     let g:nord_italic = 1
     let g:nord_underline = 1
     let g:nord_italic_comments = 1
     let g:nord_cursor_line_number_background = 1
     let g:airline_theme='nord'
+    colorscheme nord
 endif
 
 " Highlight TODO, FIXME, NOTE, etc.
