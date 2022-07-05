@@ -37,3 +37,9 @@
 [submodule "vim/bundle/awesome-vim-colorschemes"]
 	path = vim/bundle/awesome-vim-colorschemes
 	url = https://github.com/rafi/awesome-vim-colorschemes.git
+[submodule "nord-gnome-terminal"]
+	path = nord-gnome-terminal
+	url = https://github.com/arcticicestudio/nord-gnome-terminal.git
+[submodule "vim/bundle/vim-polyglot"]
+	path = vim/bundle/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
