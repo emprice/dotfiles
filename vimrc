@@ -120,13 +120,23 @@ let g:markdown_fenced_languages = ['bash=sh', 'css', 'javascript', 'js=javascrip
 " Syntax highlighting
 syntax enable
 set background=dark
-set termguicolors
-let g:nord_italic = 1
-let g:nord_underline = 1
-let g:nord_italic_comments = 1
-let g:nord_cursor_line_number_background = 1
-colorscheme nord
-let g:airline_theme='nord'
+
+if $STY != ""
+    " disable Background Color Erase (BCE) so that color schemes
+    " render properly when inside 256-color GNU screen.
+    set t_ut=
+    set t_Co=256
+    let g:airline_theme='atomic'
+    colorscheme hybrid
+else
+    set termguicolors
+    let g:nord_italic = 1
+    let g:nord_underline = 1
+    let g:nord_italic_comments = 1
+    let g:nord_cursor_line_number_background = 1
+    let g:airline_theme='nord'
+    colorscheme nord
+endif
 
 " Highlight TODO, FIXME, NOTE, etc.
 autocmd Syntax * call matchadd('Todo', '\W\zs\(TODO\|FIXME\|NOTE\|XXX\|BUG\|HACK\)')

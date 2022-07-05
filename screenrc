@@ -10,7 +10,5 @@ startup_message off
 # Automatically detach on hangup.
 autodetach on
 
-# Start with visual bell as default
-vbell on
-vbell_msg "bell on %t (%n)"
-activity "activity in %t(%n)"
+# colors!
+term screen-256color
