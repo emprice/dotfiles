@@ -20,5 +20,3 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-
-PATH="/usr/local/java/bin:/usr/local/qt/5.9.1/gcc_64/bin:/usr/local/texlive/2016/bin/x86_64-linux:$PATH"

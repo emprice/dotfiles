@@ -139,6 +139,9 @@ else
 endif
 
 " Highlight TODO, FIXME, NOTE, etc.
-autocmd Syntax * call matchadd('Todo', '\W\zs\(TODO\|FIXME\|NOTE\|XXX\|BUG\|HACK\)')
+let g:todo_color = synIDattr(hlID('Todo'), 'fg')
+execute printf('highlight FancyTodo guifg=%s cterm=italic', g:todo_color)
+autocmd Syntax * call matchadd('FancyTodo', '\W\zs\(TODO\|FIXME\|NOTE\|XXX\|BUG\|HACK\)')
+autocmd Syntax * call matchadd('FancyTodo', '\W\zs\(TODO\|FIXME\|NOTE\|XXX\|BUG\|HACK\):')
 
 " vim: set ft=vim:
